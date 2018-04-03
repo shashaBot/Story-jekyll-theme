@@ -1,0 +1,35 @@
+{% assign title = site.data.settings.title %}
+{% assign subtitle = site.data.settings.subtitle %}
+<!DOCTYPE HTML>
+<html>
+	{% include head.html %}
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Banner -->
+					{% include banner.html %}
+
+				<!-- Posts -->
+					{% for post in site.posts %}
+						{% include post_item.html %}
+					{% endfor %}
+
+				<!-- Contact form -->
+				{% include contact.html %}
+
+				<!-- Footer -->
+					{% include footer.html %}
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<section class="banner 
+    {{site.data.banner.style}} 
+    {{site.data.banner.orient}} 
+    {{site.data.banner.imagePos}} 
+    {{site.data.banner.contentAlign}} 
+    {{site.data.banner.size}} 
+    {{site.data.banner.onloadImg}} 
+    {{site.data.banner.onloadContent}}
+    {% if site.data.banner.scheme == 'invert' %}
+    invert {% endif %}">
+    <div class="content">
+        <header>
+            <h2>{{site.data.banner.title}}</h2>
+            <p>{{site.data.banner.subtitle}}</p>
+        </header>
+        <p class="major">{{site.data.banner.para}}</p>
+        <ul class="actions vertical">
+            <li><a href="#post_0" class="button big wide smooth-scroll-middle">{{site.data.banner.actionText}}</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/banner.jpg" alt="" />
+    </div>
+</section>

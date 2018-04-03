@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>{{page.title}} | {{site.data.settings.title}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{"/assets/css/main.css" | absolute_url}}" />
+</head>
+
+<body>
+    <section class="wrapper {{site.data.post.wrapperStyle}} {{site.data.post.wrapperAlign}}">
+    	<div class="inner">
+    		<div class="index align-left">
+    			<section>
+			        <header>
+			            <h1>{{page.title}}</h1>
+			            <p>{{ page.subtitle }}</p>
+						<div class="share-page">
+						    Share this on &rarr;
+						    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+						    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+						    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+						</div>			            
+			        </header>
+			        <div class="content">
+			        	{{content}}
+			        </div>
+    			</section>
+    		</div>
+    	</div>
+    </section>
+</body>
+
+</html>

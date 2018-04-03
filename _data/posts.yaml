@@ -1,0 +1,10 @@
+style: style1
+sectionType: spotlight
+contentAlign: content-align-left
+imagePos: image-position-center
+orientFirst: orient-right
+orientSecond: orient-left
+schemeFirst: null
+schemeSecond: invert
+readBtnText: More
+onScrollImg: onscroll-image-fade-in

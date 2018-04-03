@@ -1,0 +1,25 @@
+{% assign alt = forloop.index0 | modulo: 2 | floor %}
+<section class="
+	{{site.data.posts.sectionType}} 
+	{{site.data.posts.style}} 
+	{{site.data.posts.contentAlign}} 
+	{{site.data.posts.imagePos}} 
+	{{site.data.posts.onScrollImg}}
+	{% if alt == 1 %}
+	{{ site.data.posts.orientSecond }}
+	{{ site.data.posts.schemeSecond }} 
+	{% else %}
+	{{ site.data.posts.orientFirst }}
+	{{ site.data.posts.schemeFirst }}
+	{% endif %}" id="post_{{forloop.index0}}">
+    <div class="content">
+        <h2>{{post.title}}</h2>
+        <p>{{post.excerpt}}</p>
+        <ul class="actions vertical">
+            <li><a href="{{post.url}}" class="button">{{site.data.posts.readBtnText}}</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/{{post.image}}" alt="{% if post.imgAlt %} {{post.imgAlt}} {% endif %}" />
+    </div>
+</section>
