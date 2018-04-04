@@ -163,6 +163,10 @@
 		text-align: right;
 	}
 
+	.post-content {
+		font-size: 1.2rem !important;
+	}
+
 	@include breakpoint(small) {
 		p {
 			&.major {

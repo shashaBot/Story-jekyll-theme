@@ -77,4 +77,16 @@
 		}
 	}
 
+	ul.social-sticky.icons {
+		@media screen and (min-width: 480px) {
+			position: sticky;
+			top: 40px;
+			> li {
+				padding: 0.4rem 0;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+
 	@include color-icon;
