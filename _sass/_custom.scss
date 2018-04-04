@@ -1,0 +1,15 @@
+.more-posts-container {
+	display: flex;
+	justify-content: space-between;
+	.more-post {
+		flex-grow: 1;
+		text-align: center;
+		padding: 2rem;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
