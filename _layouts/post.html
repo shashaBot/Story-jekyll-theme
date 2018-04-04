@@ -28,6 +28,34 @@
                         {{content}}
                     </div>
                 </section>
+                <section>
+                    <div class="content">
+                        <h4 style="font-weight: 500">Keep reading:</h4>
+                        <div class="more-posts-container">
+                            {% if page.previous %}
+                                <div class="more-post">
+                                    <a class="more-post-link" href="{{page.previous.url | relative_url}}">
+                                        <h3>{{page.previous.title}}</h3>
+                                    </a>
+                                    <div>
+                                        {{page.previous.excerpt | truncatewords: 15}}
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if page.next %}
+                                <div class="more-post">
+                                    <a class="more-post-link" href="{{page.next.url | relative_url}}">
+                                        <h3>{{page.next.title}}</h3>
+                                    </a>
+                                    <div>
+                                        {{page.next.excerpt | truncatewords: 15}}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
