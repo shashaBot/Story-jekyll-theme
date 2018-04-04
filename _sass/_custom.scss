@@ -13,3 +13,22 @@
 		}
 	}
 }
+#navbar {
+	background-color: black;
+}
+.back-button {
+    width: 6%;
+    padding: 3px 0 0;
+    text-align: center;
+    background-color: #524848;
+	
+	@include breakpoint(xsmall) {
+		width: 9%;
+	}
+
+    i {
+		font-size: 31px;
+	    font-weight: 700;
+	    color: white;
+    }
+}

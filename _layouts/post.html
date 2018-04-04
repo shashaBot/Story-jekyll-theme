@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <div id="navbar">
+        <div class="back-button">
+            <a href="{{site.url | relative_url}}">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
     <section class="wrapper {{site.data.post.wrapperStyle}} {{site.data.post.wrapperAlign}}">
         <div class="inner">
             <h1>{{page.title}}</h1>
@@ -30,7 +37,7 @@
                 </section>
                 <section>
                     <div class="content">
-                        <h4 style="font-weight: 500">Keep reading:</h4>
+                        <h3 style="font-weight: 400; text-align: center;">Keep reading</h3>
                         <div class="more-posts-container">
                             {% if page.previous %}
                                 <div class="more-post">
